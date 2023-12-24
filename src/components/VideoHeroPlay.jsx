@@ -1,5 +1,3 @@
-// src/components/VideoHero.js
-
 import React, { useState } from "react";
 import YouTube from "react-youtube";
 
@@ -18,13 +16,16 @@ const VideoHeroPlay = () => {
     },
   };
 
-  const videoUrl = "https://www.youtube.com/watch?v=OHaNczj3gEY";
+  // Provide only the video ID without the entire URL
+  const videoId = "wk-OquvjAiA";
 
   const onReady = (event) => {
     setPlayer(event.target);
   };
 
   const onStateChange = (event) => {
+    console.log("State Change", event.data);
+
     // If video has ended, restart it
     if (event.data === YouTube.PlayerState.ENDED) {
       player.seekTo(0);
@@ -43,7 +44,7 @@ const VideoHeroPlay = () => {
     <div className="relative w-full h-screen">
       <div className="absolute inset-0 overflow-hidden">
         <YouTube
-          videoId={videoUrl.split("v=")[1]}
+          videoId={videoId}
           opts={videoOptions}
           className="w-full h-full object-cover"
           onReady={onReady}

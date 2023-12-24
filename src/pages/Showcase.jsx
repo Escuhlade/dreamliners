@@ -4,7 +4,12 @@ import VideoHeroImg from "../components/VideoHeroImg";
 import Navbar from "../components/Navbar";
 
 const Showcase = () => {
-  return <div>{/* <Slideshow /> */}</div>;
+  return (
+    <div>
+      <Navbar />
+      <Slideshow />
+    </div>
+  );
 };
 
 export default Showcase;

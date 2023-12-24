@@ -1,0 +1,9 @@
+#scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}

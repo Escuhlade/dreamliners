@@ -14,10 +14,6 @@ const VideoHeroImg = () => {
           playsInline
           poster="https://i.gyazo.com/5f08f77340690deed61456405a2b2bb5.png"
         >
-          <source
-            src="https://www.youtube.com/watch?v=OHaNczj3gEY&ab_channel=WHYG35"
-            type="video/mp4"
-          />
           Your browser does not support the video tag.
         </video>
       </div>
