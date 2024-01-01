@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DropMenu from "./DropMenu";
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -15,7 +16,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-transparent dark:bg-transparent fixed w-full z-20 top-0 start-0 border-b border-transparent dark:border-transparent">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative">
+        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 relative top-0 left-0">
+          <div className="top-0 left-0">
+            <DropMenu />
+          </div>
           {/* Centered Dreamliner Logo */}
           <div className="flex items-center justify-center w-full">
             <img
