@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import HeroVideo from "../videos/HeroVideo.mp4";
-import waqVideo from "../components/waqVideo";
 import VideoHeroPlay from "../components/VideoHeroPlay";
 
 const Home = () => {
