@@ -12,7 +12,7 @@ const images = [
   "https://i.gyazo.com/d8ce9e2fc5321a89e08007b284c760e2.png",
 ];
 
-const delay = 1000;
+const delay = 3000;
 
 function Slideshow() {
   const [index, setIndex] = React.useState(0);
