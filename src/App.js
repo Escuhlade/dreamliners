@@ -9,7 +9,7 @@ import Showcase from "./pages/Showcase";
 export default function App() {
   return (
     <Router>
-      <div className="sm:min-h-screen bg-blue-500 md:min-h-screen bg-green-500 lg:min-h-screen bg-yellow-500 xl:min-h-screen bg-indigo-500 2xl:min-h-screen bg-purple-500 3xl:min-h-screen bg-pink-500">
+      <div className="sm:min-h-screen bg-gray-950 md:min-h-screen bg-gray-950 lg:min-h-screen bg-gray-950 xl:min-h-screen bg-gray-950 2xl:min-h-screen bg-gray-950 3xl:min-h-screen bg-gray-950">
         {/* Your common layout or navigation can go here */}
         <Switch>
           <Route path="/" exact component={Home} />

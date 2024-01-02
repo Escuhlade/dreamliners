@@ -23,8 +23,8 @@ const Navbar = () => {
           {/* Centered Dreamliner Logo */}
           <div className="flex items-center justify-center w-full">
             <img
-              src="https://i.gyazo.com/57ee3243a1eb2b0aca748f10056aa55b.png"
-              className="h-8 flex-shrink-0 cursor-pointer"
+              src="https://i.gyazo.com/8727f9cdf2e8b2ad922a4738cf995a0f.png"
+              className="h-16 flex-shrink-0 cursor-pointer transform transition-transform duration-100 hover:scale-110"
               alt="DL Logo"
             />
           </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3 md:order-2 md:ml-auto rtl:space-x-reverse">
             <button
               type="button"
-              className="text-white hover:bg-violet-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 dark:focus:ring-blue-800"
+              className="text-white transform transition-transform duration-100 hover:scale-105 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 dark:focus:ring-blue-800"
             >
               Get Started
             </button>
@@ -69,8 +69,8 @@ const Navbar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-transparent rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:border-transparent">
               <li>
                 <img
-                  src="https://i.gyazo.com/8ce47fd872187bfa8d11505b3bd8944e.png"
-                  className="h-8 mr-3"
+                  src="https://i.gyazo.com/6aa589114f810d037cd078b07c45ee97.png"
+                  className="h-14 mr-3 transform transition-transform duration-100 hover:scale-110"
                   alt="Some Other Logo"
                   onClick={redirectToInstagram}
                 />
