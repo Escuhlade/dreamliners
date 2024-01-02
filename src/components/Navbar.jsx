@@ -70,7 +70,7 @@ const Navbar = () => {
               <li>
                 <img
                   src="https://i.gyazo.com/6aa589114f810d037cd078b07c45ee97.png"
-                  className="h-14 mr-3 transform transition-transform duration-100 hover:scale-110"
+                  className="sm:h-14 mr-3 transform transition-transform duration-100 hover:scale-110 md:h-16 h-12 w-auto"
                   alt="Some Other Logo"
                   onClick={redirectToInstagram}
                 />
