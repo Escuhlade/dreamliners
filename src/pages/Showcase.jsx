@@ -14,7 +14,16 @@ const Showcase = () => {
       {/* image slider component */}
       <ImageSlider />
       {/* ultra luxury package */}
-      <img src="../images/Exhibit_Images/m801.png" alt="M8 Starlight Kit"className="w-full h-full"></img>
+      <div className="flex justify-start snap-always snap-center mb-0 h-screen">
+
+      <img src="https://images2.imgbox.com/cd/4c/jakyua95_o.png" alt="M8 Starlight Kit"className="w-full h-full object-cover"></img>
+      </div>
+      {/* Custom luxury 900 Kit */}
+      <div className="flex justify-start snap-always snap-center mb-0 h-screen">
+
+        <img src="https://images2.imgbox.com/7d/cc/MMyEwMtT_o.png" alt="M8 Starlight Kit"className="w-full h-full object-cover"></img>
+      </div>
+      
       </div>
       {/* <Slideshow /> */}
     </div>
