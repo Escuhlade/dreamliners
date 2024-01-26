@@ -21,8 +21,15 @@ const Showcase = () => {
       {/* Custom luxury 900 Kit */}
       <div className="flex justify-start snap-always snap-center mb-0 h-screen">
 
-        <img src="https://images2.imgbox.com/7d/cc/MMyEwMtT_o.png" alt="M8 Starlight Kit"className="w-full h-full object-cover"></img>
+        <img src="https://images2.imgbox.com/7d/cc/MMyEwMtT_o.png" alt="i8 Starlight Kit"className="w-full h-full object-cover"></img>
       </div>
+
+      {/* 600 kit premimum */}
+      <div className="flex justify-start snap-always snap-center mb-0 h-screen">
+
+        <img src="https://images2.imgbox.com/9e/ab/fEGcq3bM_o.png" alt="g80 Starlight Kit"className="w-full h-full object-cover"></img>
+      </div>
+
       
       </div>
       {/* <Slideshow /> */}
