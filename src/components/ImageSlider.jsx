@@ -15,6 +15,12 @@ const images = [
     original: "https://picsum.photos/id/1019/1000/600/",
     thumbnail: "https://picsum.photos/id/1019/250/150/",
   },
+
+  {
+    original: "https://images2.imgbox.com/96/07/D8lxVB4W_o.jpg",
+    thumbnail: "https://images2.imgbox.com/96/07/D8lxVB4W_o.jpg",
+  },
+
 ];
 
 const ImageSlider = () => {
@@ -81,7 +87,7 @@ const ImageSlider = () => {
         fullscreen={isFullscreen}
         disableSwipe={isFullscreen}
         onBeforeSlide={handleBeforeSlide}
-        additionalClass="w-full h-full" // Additional class to make the gallery full-width and full-height
+        additionalClass="w-full h-1/2" // Additional class to make the gallery full-width and full-height
       />
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}
