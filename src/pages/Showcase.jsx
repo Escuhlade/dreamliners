@@ -3,6 +3,7 @@ import Slideshow from "../components/Slideshow";
 import VideoHeroImg from "../components/VideoHeroImg";
 import Navbar from "../components/Navbar";
 import ImageSlider from "../components/ImageSlider";
+import FooterComp from "../components/FooterComp";
 
 const Showcase = () => {
   return (
@@ -32,7 +33,8 @@ const Showcase = () => {
 
       
       </div>
-      {/* <Slideshow /> */}
+      {/* footer component */}
+      <FooterComp/>
     </div>
   );
 };

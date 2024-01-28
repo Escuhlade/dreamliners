@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import HeroVideo from "../videos/HeroVideo.mp4";
 import VideoHeroPlay from "../components/VideoHeroPlay";
+import FooterComp from "../components/FooterComp";
 
 const Home = () => {
   const [scrollIndex, setScrollIndex] = useState(0);
@@ -106,6 +107,8 @@ const Home = () => {
           </video>
         </div>
       </div>
+      {/* footer comp */}
+      <FooterComp/>
     </>
   );
 };
