@@ -19,6 +19,10 @@ export default function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/packages" component={Packages} />
           <Route path="/showcase" component={Showcase} />
+          {/* <Route path="/aboutus" component={} /> */}
+          {/* <Route path="/faqs" component={Showcase} /> */}
+          
+          
           {/* Add a 404 page for routes that do not match */}
           <Route path="*" component={() => <div>404 Not Found</div>} />
         </Switch>
