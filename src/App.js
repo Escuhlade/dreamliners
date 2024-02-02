@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import Packages from "./pages/Packages";
 import Showcase from "./pages/Showcase";
 import {Cloudinary} from "@cloudinary/url-gen";
-
+import './App.css'
 
 export default function App() {
   return (
