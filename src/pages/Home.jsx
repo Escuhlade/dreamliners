@@ -11,6 +11,7 @@ const Home = () => {
   const videoRefs = [useRef(), useRef(), useRef()];
 
   useEffect(() => {
+    // Optional: You can do something when the component mounts
   }, []);
 
   return (
@@ -25,6 +26,7 @@ const Home = () => {
             autoPlay={true}
             loop={true}
             muted={true}
+            loading="lazy"
           >
             <source src={herovideo} />
             Your browser does not support the video tag.
@@ -39,6 +41,7 @@ const Home = () => {
             autoPlay={true}
             loop={true}
             muted={true}
+            loading="lazy"
           >
             <source src={leftside} type="video/mp4" />
             Your browser does not support the video tag.
@@ -49,6 +52,7 @@ const Home = () => {
             autoPlay={true}
             loop={true}
             muted={true}
+            loading="lazy"
           >
             <source src={dualcolor} type="video/mp4" />
             Your browser does not support the video tag.
@@ -63,6 +67,7 @@ const Home = () => {
             autoPlay={true}
             loop={true}
             muted={true}
+            loading="lazy"
           >
             <source src={homepage3} type="video/mp4" />
             Your browser does not support the video tag.

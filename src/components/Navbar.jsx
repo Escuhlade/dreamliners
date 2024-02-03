@@ -22,11 +22,14 @@ const Navbar = () => {
           </div>
           {/* Centered Dreamliner Logo */}
           <div className="flex items-center justify-center w-full">
+            <a href="/">
+
             <img
               src="https://i.gyazo.com/8727f9cdf2e8b2ad922a4738cf995a0f.png"
               className="h-16 flex-shrink-0 cursor-pointer transform transition-transform duration-100 hover:scale-110"
               alt="DL Logo"
-            />
+              />
+              </a>
           </div>
 
           {/* Horizontal Dropdown Menu */}
