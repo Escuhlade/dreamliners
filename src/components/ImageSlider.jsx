@@ -21,6 +21,7 @@ import img15 from "../images/16x9Gallery/m802_16x9.png"
 import img16 from "../images/16x9Gallery/premium_16x9.png"
 import img17 from "../images/16x9Gallery/starter_16x9.png"
 
+import tester from "../images/Gallery_Slider/g801.png"
 const images = [
   {
     original: image1,
@@ -70,8 +71,8 @@ const images = [
   },
   
   {
-    original: img17,
-    thumbnail: img17,
+    original: tester,
+    thumbnail: tester,
   },
 ];
 
@@ -139,11 +140,11 @@ const ImageSlider = () => {
         fullscreen={isFullscreen}
         disableSwipe={isFullscreen}
         onBeforeSlide={handleBeforeSlide}
-        additionalClass="w-full h-full" // Additional class to make the gallery full-width and full-height
         className="w-full h-full"
       />
       <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}
+        className="flex w-full h-full justify-center mt-10"
+        // style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}
       >
         {images.map((image, index) => (
           <img
@@ -152,7 +153,7 @@ const ImageSlider = () => {
             alt={`Thumbnail ${index}`}
             style={{
               width: "50px",
-              height: "30px",
+              height: "40px",
               border: index === currentIndex ? "2px solid blue" : "none",
               cursor: "pointer",
               margin: "0 5px",

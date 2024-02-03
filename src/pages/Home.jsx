@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useRef } from "react";
+import useScrollSnap from "react-use-scroll-snap";
 import Navbar from "../components/Navbar";
 import HeroVideo from "../videos/HeroVideo.mp4";
 import VideoHeroPlay from "../components/VideoHeroPlay";
@@ -9,42 +11,17 @@ import dualcolor from '../videos/compressed/DualColor-trimmed.mp4'
 import leftside from '../videos/compressed/LeftSide-trimmed.mp4'
 import homepage3 from '../videos/compressed/HomePage3-Trimmed.mov'
 
+
 const Home = () => {
-  const [scrollIndex, setScrollIndex] = useState(0);
-
-  useEffect(() => {
-    const handleWheel = (event) => {
-      const scrollDirection = event.deltaY > 0 ? 1 : -1; // 1 for scrolling down, -1 for scrolling up
-      setScrollIndex((prevIndex) => prevIndex + scrollDirection);
-    };
-
-    window.addEventListener("wheel", handleWheel);
-
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
-
-  useEffect(() => {
-    const maxScrollIndex = 2; // Adjust based on the number of videos
-    setScrollIndex((prevIndex) =>
-      Math.max(0, Math.min(maxScrollIndex, prevIndex))
-    );
-  }, [scrollIndex]);
-
-  useEffect(() => {
-    window.scrollTo({
-      top: scrollIndex * window.innerHeight,
-      behavior: "smooth",
-    });
-  }, [scrollIndex]);
-
+  const scrollRef = useRef(null);
+  useScrollSnap({ ref: scrollRef, duration: 100, delay: 20 });
+  
   return (
     <>
       {/* <h1> Butcher Works</h1> */}
       <Navbar />
-      <div className="snap-y overflow-y-auto h-screen">
-        <div className="snap-always snap-center mb-0 w-full h-full">
+      <div className="overflow-y-auto h-screen" ref={scrollRef}>
+        <div className="mb-0 w-full h-full">
           {/* <ReactVideoPlayer /> */}
           <video
             className="w-full h-full object-cover"
@@ -68,7 +45,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video> */}
         </div>
-        <div className="flex justify-start snap-always snap-center mb-0 h-screen">
+        <div className="flex justify-start mb-0 h-screen">
           {/* left video for half half split*/}
           <video
             className="w-auto h-full object-cover"
@@ -99,7 +76,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="snap-always snap-center mb-0 h-screen">
+        <div className="mb-0 h-screen">
           <video
             className="w-full h-full object-cover"
             controls={false}

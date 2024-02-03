@@ -23,7 +23,9 @@
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-scroll-motion": "^0.3.2",
+    "react-use-scroll-snap": "^1.0.0",
     "react-youtube": "^10.1.0",
+    "scroll-snap": "^4.0.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
