@@ -6,7 +6,12 @@ import Contact from "./pages/Contact";
 import Packages from "./pages/Packages";
 import Showcase from "./pages/Showcase";
 import {Cloudinary} from "@cloudinary/url-gen";
+import {AdvancedImage} from '@cloudinary/react';
 
+import Faqs from "./pages/Faqs";
+
+// instance of CDN
+const cld = new Cloudinary({cloud: {cloudName: 'dvszlle22'}});
 
 export default function App() {
   return (
@@ -20,7 +25,7 @@ export default function App() {
           <Route path="/packages" component={Packages} />
           <Route path="/showcase" component={Showcase} />
           {/* <Route path="/aboutus" component={} /> */}
-          {/* <Route path="/faqs" component={Showcase} /> */}
+          <Route path="/faqs" component={Faqs} />
           
           
           {/* Add a 404 page for routes that do not match */}
