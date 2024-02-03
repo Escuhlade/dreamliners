@@ -7,7 +7,7 @@ import background from '../videos/compressed/FooterBackdrop-trimmed.mov'
 function FooterComp() {
   return (
     <Footer container>
-      <div className="w-full text-center relative">
+      <div className="w-full text-center relative bg-black">
         <div className="w-full justify-between flex items-center relative z-10">
           <Footer.Brand
             // follow the similar way to how we did it for fb logo where the logo is being called inside the link but with img tag. so change this to try with img tag and adjsut size

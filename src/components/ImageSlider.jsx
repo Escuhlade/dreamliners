@@ -1,14 +1,15 @@
 import React, { useRef, useState } from "react";
 import Gallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-
+import image1 from "../images/AcuraTlBrown_16x9.png"
+import tl1 from "../images/Editttt-9_16x9.png"
 const images = [
   {
-    original: "https://i.gyazo.com/409e073ccc5894f2f51b71cabea96bc2.jpg",
+    original: image1,
     thumbnail: "https://i.gyazo.com/409e073ccc5894f2f51b71cabea96bc2.jpg",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
+    original: tl1,
     thumbnail: "https://picsum.photos/id/1015/250/150/",
   },
   {
@@ -77,7 +78,7 @@ const ImageSlider = () => {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Gallery
         items={images}
-        showBullets
+        // showBullets
         showThumbnails={false}
         showPlayButton={false}
         showFullscreenButton={false}
@@ -87,7 +88,8 @@ const ImageSlider = () => {
         fullscreen={isFullscreen}
         disableSwipe={isFullscreen}
         onBeforeSlide={handleBeforeSlide}
-        additionalClass="w-full h-1/2" // Additional class to make the gallery full-width and full-height
+        additionalClass="w-full h-full" // Additional class to make the gallery full-width and full-height
+        className="w-full h-full"
       />
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}
@@ -109,9 +111,6 @@ const ImageSlider = () => {
         ))}
       </div>
       <div style={{ marginTop: "10px" }}>
-        <button onClick={() => handleManualSlide(0)}>Go to First Image</button>
-        <button onClick={() => handleManualSlide(1)}>Go to Second Image</button>
-        <button onClick={() => handleManualSlide(2)}>Go to Third Image</button>
         <button onClick={toggleFullscreen}>
           {isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
         </button>
