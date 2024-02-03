@@ -3,25 +3,76 @@ import Gallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import image1 from "../images/AcuraTlBrown_16x9.png"
 import tl1 from "../images/Editttt-9_16x9.png"
+import img1 from "../images/16x9Gallery/DSC_0366_16x9.png"
+import img2 from "../images/16x9Gallery/DSC_0369_16x9.png"
+import img3 from "../images/16x9Gallery/DSC_0393_16x9.png"
+import img4 from "../images/16x9Gallery/DSC_0419_16x9.png"
+import img5 from "../images/16x9Gallery/Edited 2_16x9.png"
+import img6 from "../images/16x9Gallery/IMG_7380-Edit_16x9.png"
+import img7 from "../images/16x9Gallery/g801_16x9.png"
+import img8 from "../images/16x9Gallery/g802_16x9.png"
+import img9 from "../images/16x9Gallery/g803_16x9.png"
+import img10 from "../images/16x9Gallery/i81_16x9 (1).png"
+import img11 from "../images/16x9Gallery/i81_16x9.png"
+import img12 from "../images/16x9Gallery/IMG_7380-Edit_16x9.png"
+import img13 from "../images/16x9Gallery/luxury_16x9.png"
+import img14 from "../images/16x9Gallery/m801_16x9.png"
+import img15 from "../images/16x9Gallery/m802_16x9.png"
+import img16 from "../images/16x9Gallery/premium_16x9.png"
+import img17 from "../images/16x9Gallery/starter_16x9.png"
+
 const images = [
   {
     original: image1,
-    thumbnail: "https://i.gyazo.com/409e073ccc5894f2f51b71cabea96bc2.jpg",
+    thumbnail: image1,
   },
   {
     original: tl1,
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    thumbnail: tl1,
   },
 
+  // new additional files to list
   {
-    original: "https://images2.imgbox.com/96/07/D8lxVB4W_o.jpg",
-    thumbnail: "https://images2.imgbox.com/96/07/D8lxVB4W_o.jpg",
+    original: img6,
+    thumbnail: img6,
   },
-
+  {
+    original: img7,
+    thumbnail: img7,
+  },
+  {
+    original: img8,
+    thumbnail: img8,
+  },
+  {
+    original: img9,
+    thumbnail: img9,
+  },
+  {
+    original: img10,
+    thumbnail: img10,
+  },
+  {
+    original: img12,
+    thumbnail: img12,
+  },
+  {
+    original: img13,
+    thumbnail: img13,
+  },
+  {
+    original: img14,
+    thumbnail: img14,
+  },
+  {
+    original: img15,
+    thumbnail: img15,
+  },
+  
+  {
+    original: img17,
+    thumbnail: img17,
+  },
 ];
 
 const ImageSlider = () => {

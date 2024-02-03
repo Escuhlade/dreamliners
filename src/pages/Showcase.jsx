@@ -8,7 +8,6 @@ import m8 from "../images/Exhibit_Images/Group40.png";
 import i8 from "../images/Exhibit_Images/Group41.png";
 import g80 from "../images/Exhibit_Images/Group42.png";
 import nebula from "../images/nebula.jpeg"
-import nightsky from "../images/sky_with_full_of_bright_stars_with_black_sky_background_4k_5k_hd_galaxy.jpg"
 
 const Showcase = () => {
   return (
@@ -16,6 +15,7 @@ const Showcase = () => {
       {/* general wrap for navbar */}
       <Navbar />
       <div>
+        <h1>Our Exposition</h1>
         {/* this is for the image sliding and the packages in the on exhibit on figma */}
         {/* image slider component */}
         <ImageSlider className="w-full h-full" />

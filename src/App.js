@@ -8,6 +8,7 @@ import Packages from "./pages/Packages";
 import Showcase from "./pages/Showcase";
 import {Cloudinary} from "@cloudinary/url-gen";
 import Faqs from "./pages/Faqs";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/showcase" component={Showcase} />
           {/* <Route path="/aboutus" component={} /> */}
           <Route path="/faqs" component={Faqs} />
+          <Route path="/about" component={About}></Route>
           
           
           {/* Add a 404 page for routes that do not match */}
