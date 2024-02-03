@@ -1,0 +1,22 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    padding: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66);
+    border-radius: 50px;
+
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background-color: rgb(3 7 18);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: black;
+
+  }

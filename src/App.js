@@ -1,17 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
+import UzHome from "./pages/UzHome";
 import Bookings from "./pages/Bookings";
 import Contact from "./pages/Contact";
 import Packages from "./pages/Packages";
 import Showcase from "./pages/Showcase";
 import {Cloudinary} from "@cloudinary/url-gen";
-import {AdvancedImage} from '@cloudinary/react';
-
-import Faqs from "./pages/Faqs";
-
-// instance of CDN
-const cld = new Cloudinary({cloud: {cloudName: 'dvszlle22'}});
 
 export default function App() {
   return (
