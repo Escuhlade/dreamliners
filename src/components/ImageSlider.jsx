@@ -3,23 +3,15 @@ import Gallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import image1 from "../images/AcuraTlBrown_16x9.png"
 import tl1 from "../images/Editttt-9_16x9.png"
-import img1 from "../images/16x9Gallery/DSC_0366_16x9.png"
-import img2 from "../images/16x9Gallery/DSC_0369_16x9.png"
-import img3 from "../images/16x9Gallery/DSC_0393_16x9.png"
-import img4 from "../images/16x9Gallery/DSC_0419_16x9.png"
-import img5 from "../images/16x9Gallery/Edited 2_16x9.png"
 import img6 from "../images/16x9Gallery/IMG_7380-Edit_16x9.png"
 import img7 from "../images/16x9Gallery/g801_16x9.png"
 import img8 from "../images/16x9Gallery/g802_16x9.png"
 import img9 from "../images/16x9Gallery/g803_16x9.png"
 import img10 from "../images/16x9Gallery/i81_16x9 (1).png"
-import img11 from "../images/16x9Gallery/i81_16x9.png"
 import img12 from "../images/16x9Gallery/IMG_7380-Edit_16x9.png"
 import img13 from "../images/16x9Gallery/luxury_16x9.png"
 import img14 from "../images/16x9Gallery/m801_16x9.png"
 import img15 from "../images/16x9Gallery/m802_16x9.png"
-import img16 from "../images/16x9Gallery/premium_16x9.png"
-import img17 from "../images/16x9Gallery/starter_16x9.png"
 
 import tester from "../images/Gallery_Slider/g801.png"
 const images = [

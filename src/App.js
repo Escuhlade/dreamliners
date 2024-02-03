@@ -1,12 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import UzHome from "./pages/UzHome";
 import Bookings from "./pages/Bookings";
 import Contact from "./pages/Contact";
 import Packages from "./pages/Packages";
 import Showcase from "./pages/Showcase";
-import {Cloudinary} from "@cloudinary/url-gen";
 import Faqs from "./pages/Faqs";
 import About from "./pages/About";
 

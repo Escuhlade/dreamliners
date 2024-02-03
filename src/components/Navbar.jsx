@@ -23,7 +23,6 @@ const Navbar = () => {
           {/* Centered Dreamliner Logo */}
           <div className="flex items-center justify-center w-full">
             <a href="/">
-
             <img
               src="https://i.gyazo.com/8727f9cdf2e8b2ad922a4738cf995a0f.png"
               className="h-16 flex-shrink-0 cursor-pointer transform transition-transform duration-100 hover:scale-110"
@@ -35,20 +34,17 @@ const Navbar = () => {
           {/* Horizontal Dropdown Menu */}
           {isDropdownOpen && (
             <div className="absolute left-0 top-0 mt-2 space-x-4 origin-top-left bg-white border border-gray-200 rounded-md shadow-lg w-48 z-10">
-              <a
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-              >
+              <a href="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 Menu Item 1
               </a>
               <a
-                href="#"
+                href="/"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 Menu Item 2
               </a>
               <a
-                href="#"
+                href="/"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 Menu Item 3

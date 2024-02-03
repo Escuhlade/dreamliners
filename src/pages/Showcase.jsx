@@ -1,7 +1,6 @@
 import React from "react";
-import Slideshow from "../components/Slideshow";
-import VideoHeroImg from "../components/VideoHeroImg";
 import Navbar from "../components/Navbar";
+
 import ImageSlider from "../components/ImageSlider";
 import FooterComp from "../components/FooterComp";
 import m8 from "../images/Exhibit_Images/Group40.png";

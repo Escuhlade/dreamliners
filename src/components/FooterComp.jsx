@@ -2,7 +2,6 @@
 
 import { Footer } from 'flowbite-react';
 
-import background from '../videos/compressed/FooterBackdrop-trimmed.mov'
 
 function FooterComp() {
   return (
