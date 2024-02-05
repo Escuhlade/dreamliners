@@ -8,20 +8,18 @@ import leftside from '../videos/compressed/LeftSide-trimmed.mp4'
 import homepage3 from '../videos/compressed/HomePage3-Trimmed.mov'
 
 const Home = () => {
+
   const videoRefs = [useRef(), useRef(), useRef()];
 
-  useEffect(() => {
-    // Optional: You can do something when the component mounts
-  }, []);
 
   return (
     <>
       <Navbar />
       <div className="overflow-y-auto h-screen" style={{ scrollSnapType: "y mandatory" }}>
         {/* First video div */}
-        <div ref={videoRefs[0]} className="mb-0 w-full h-full" style={{ scrollSnapAlign: "start" }}>
+        <div ref={videoRefs[0]} className="h-screen" style={{ scrollSnapAlign: "start" }}>
           <video
-            className="w-full h-full object-cover"
+            className="h-screen w-screen"
             controls={false}
             autoPlay={true}
             loop={true}
@@ -34,35 +32,42 @@ const Home = () => {
         </div>
 
         {/* Second video div */}
-        <div ref={videoRefs[1]} className="flex justify-start mb-0 h-screen" style={{ scrollSnapAlign: "start" }}>
-          <video
-            className="w-auto h-full object-cover"
-            controls={false}
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            loading="lazy"
-          >
-            <source src={leftside} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <video
-            className="w-full h-full object-cover"
-            controls={false}
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            loading="lazy"
-          >
-            <source src={dualcolor} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div ref={videoRefs[1]} className="" style={{ scrollSnapAlign: "start" }}>
+          <div className="flex justify-center h-screen">
+            <div className="">
+              <video
+                className="h-screen"
+                controls={false}
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                loading="lazy"
+              >
+                <source src={leftside} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="">
+              <video
+                className="h-screen w-auto"
+                controls={false}
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                loading="lazy"
+              >
+                <source src={dualcolor} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
 
         {/* Third video div */}
-        <div ref={videoRefs[2]} className="mb-0 h-screen" style={{ scrollSnapAlign: "start" }}>
+        <div ref={videoRefs[2]} className="h-screen" style={{ scrollSnapAlign: "start" }}>
+
           <video
-            className="w-full h-full object-cover"
+            className="w-screen h-full"
             controls={false}
             autoPlay={true}
             loop={true}
@@ -73,10 +78,10 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
         </div>
+        <FooterComp />
       </div>
 
       {/* Footer component */}
-      <FooterComp />
     </>
   );
 };
