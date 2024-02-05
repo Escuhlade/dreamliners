@@ -10,12 +10,10 @@ import nebula from "../images/nebula.jpeg"
 
 const Showcase = () => {
   return (
-    <div style={{ backgroundImage: `url(${nebula})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div>
       {/* general wrap for navbar */}
       <Navbar />
-      <div>
-        <h1>Our Exposition</h1>
-        {/* this is for the image sliding and the packages in the on exhibit on figma */}
+      <div className="">
         {/* image slider component */}
         <ImageSlider className="w-full h-full" />
         {/* ultra luxury package */}
