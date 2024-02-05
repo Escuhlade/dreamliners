@@ -33,8 +33,8 @@ const Home = () => {
 
         {/* Second video div */}
         <div ref={videoRefs[1]} className="" style={{ scrollSnapAlign: "start" }}>
-          <div className="flex justify-center h-screen w-screen">
-            <div>
+          <div className="flex justify-center h-screen">
+            <div className="">
               <video
                 className="h-screen"
                 controls={false}
@@ -47,7 +47,7 @@ const Home = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div>
+            <div className="">
               <video
                 className="h-screen w-auto"
                 controls={false}

@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-transparent fixed w-full z-10">
-        <div className="max-w-screen-xl flex items-center mx-auto p-4 justify-between">
+        <div className="w-screen flex items-center p-4 justify-between">
           <div className="">
             <DropMenu />
           </div>

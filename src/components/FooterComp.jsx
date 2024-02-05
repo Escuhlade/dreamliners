@@ -4,9 +4,9 @@ import { Footer } from 'flowbite-react';
 function FooterComp() {
 
   return (
-    <div className='' >
+    <div className=''>
       <nav className="bg-transparent w-full z-10">
-        <div style={{ scrollSnapAlign: "end" }} className="max-w-screen-xl flex items-center mx-auto p-4 pt-14 justify-center">
+        <div style={{ scrollSnapAlign: "end" }} className="flex mx-16 items-center p-4 pt-14 justify-center">
           <div className='flex flex-col space-y-1 text-white text-sm text-left h-full w-1/5'>
             <a href='/showcase'><p>About Us</p></a>
             <a href='/showcase'><p>Exhibit</p></a>

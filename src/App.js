@@ -7,6 +7,7 @@ import Packages from "./pages/Packages";
 import Showcase from "./pages/Showcase";
 import Faqs from "./pages/Faqs";
 import About from "./pages/About";
+import './App.css'
 
 export default function App() {
   return (
