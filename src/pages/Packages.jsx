@@ -8,7 +8,7 @@ import g80 from "../images/Exhibit_Images/Group42.png";
 
 const Packages = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <div className="">
         {/* ultra luxury package */}
@@ -26,7 +26,7 @@ const Packages = () => {
       </div>
       {/* footer component */}
       <FooterComp />
-    </div>
+    </>
   );
 };
 

@@ -10,7 +10,7 @@ import nebula from "../images/nebula.jpeg"
 
 const Showcase = () => {
   return (
-    <div>
+    <>
       {/* general wrap for navbar */}
       <Navbar />
       <div className="">
@@ -19,7 +19,7 @@ const Showcase = () => {
       </div>
       {/* footer component */}
       <FooterComp />
-    </div>
+    </>
   );
 };
 

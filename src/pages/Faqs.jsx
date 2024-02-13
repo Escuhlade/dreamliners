@@ -1,5 +1,7 @@
 import React from 'react'
 import Faq from "react-faq-component";
+import FooterComp from '../components/FooterComp';
+import Navbar from '../components/Navbar';
 
 const data = {
     title: "FAQ (How it works)",
@@ -48,13 +50,15 @@ const config = {
 
 const Faqs = () => {
   return (
-    <div>
+    <>
+          <Navbar />
             <Faq
                 data={data}
                 styles={styles}
                 config={config}
             />
-        </div>
+      <FooterComp />
+        </>
   )
 }
 
