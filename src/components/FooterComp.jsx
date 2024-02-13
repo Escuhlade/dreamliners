@@ -8,10 +8,13 @@ function FooterComp() {
       <nav className="bg-transparent w-full z-10">
         <div className="flex mx-16 items-center p-4 pt-14 justify-center">
           <div className='flex flex-col space-y-1 text-white text-sm text-left h-full w-1/5'>
-            <a href='/showcase'><p>About Us</p></a>
-            <a href='/showcase'><p>Exhibit</p></a>
-            <a href='/showcase'><p>Packages</p></a>
-            <a href='/showcase'><p>FAQ</p></a>
+            <a href='/'><p>Home</p></a>
+            <a href='/about'><p>About Us</p></a>
+            <a href='/showcase'><p>Gallery</p></a>
+            <a href='/packages'><p>Packages</p></a>
+            <a href='/bookings'><p>Bookings</p></a>
+            <a href='/faqs'><p>FAQs</p></a>
+            <a href='/contact'><p>Contact</p></a>
           </div>
           <div className="flex flex-col items-center justify-center h-full w-full">
             <div className="flex items-center justify-center">
