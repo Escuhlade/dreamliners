@@ -10,30 +10,16 @@ import nebula from "../images/nebula.jpeg"
 
 const Showcase = () => {
   return (
-    <div style={{ backgroundImage: `url(${nebula})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <>
       {/* general wrap for navbar */}
       <Navbar />
-      <div>
-        <h1>Our Exposition</h1>
-        {/* this is for the image sliding and the packages in the on exhibit on figma */}
+      <div className="">
         {/* image slider component */}
         <ImageSlider className="w-full h-full" />
-        {/* ultra luxury package */}
-        <div className="flex justify-start snap-always snap-center mb-0 h-screen">
-          <img src={m8} alt="M8 Starlight Kit" className="w-full h-full object-cover"></img>
-        </div>
-        {/* Custom luxury 900 Kit */}
-        <div className="flex justify-start snap-always snap-center mb-0 h-screen">
-          <img src={i8} alt="i8 Starlight Kit" className="w-full h-full object-cover"></img>
-        </div>
-        {/* 600 kit premium */}
-        <div className="flex justify-start snap-always snap-center mb-0 h-screen">
-          <img src={g80} alt="g80 Starlight Kit" className="w-full h-full object-cover"></img>
-        </div>
       </div>
       {/* footer component */}
       <FooterComp />
-    </div>
+    </>
   );
 };
 

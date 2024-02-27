@@ -1,115 +1,55 @@
 import React, { useState } from "react";
+import MenuItem from "./MenuItem";
+import { MdMenu, MdClose } from "react-icons/md";
 
 const DropMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleMenuItemClick = () => {
-    setIsOpen(false);
-  };
-
-  const handleMenuClick = (event) => {
-    // Prevent the menu from closing when clicking on a menu item
-    event.stopPropagation();
-  };
-
   return (
-    <div className="relative inline-block text-left">
-      <div>
-        <button
+    <div className="">
+      <div onClick={() => setIsOpen(true)}
+        className={`${isOpen ? 'opacity-0' : 'opacity-100'} flex flex-row items-center justify-center p-3 text-white bg-white bg-opacity-0 transition-all hover:bg-opacity-25  gap-2 rounded-xl cursor-pointer select-none`}>
+        <MdMenu className="h-8 w-8 " />
+        <p
           type="button"
-          className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-opacity-50 px-3 py-2 text-sm font-semibold text-white shadow-sm transform transition-transform duration-100 hover:scale-105"
+          className=""
           id="menu-button"
-          aria-expanded={isOpen}
-          aria-haspopup="true"
-          onClick={handleButtonClick}
         >
           Menu
-          <svg
-            className="-mr-1 h-5 w-5 text-gray-400"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
+        </p>
       </div>
 
-      {isOpen && (
         <div
-          className="absolute top-full left-0 z-10 mt-2 w-56 origin-top divide-y divide-gray-100 rounded-md bg-white bg-opacity-75 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-transform duration-300 transform hover:scale-105"
+          className={`absolute left-0 top-0  w-[20%] h-screen bg-black bg-opacity-60 text-white
+          ${
+            isOpen
+              ? 'left-0 transform translate-x-0 duration-500 ease-out'
+              : '-left-full transform translate-x-full duration-500 ease-in'
+          }`}
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabIndex="-1"
-          onClick={handleMenuClick}
+        // onClick={handleMenuClick}
         >
-          <div className="py-1" role="none">
-            <a
-              href="#"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-0"
-              onClick={handleMenuItemClick}
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-1"
-              onClick={handleMenuItemClick}
-            >
-              Packages
-            </a>
+          <div className='flex flex-row justify-between items-center pr-5 pt-4 pb-4'>
+            <div></div>
+            <div> </div>
+            <div onClick={() => setIsOpen(false)} className='p-4 rounded-xl text-white transition-all bg-white bg-opacity-0 hover:bg-opacity-25 cursor-pointer select-none'>
+              <MdClose className="h-8 w-8" />
+            </div>
           </div>
-          <div className="py-1" role="none">
-            <a
-              href="#"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-2"
-              onClick={handleMenuItemClick}
-            >
-              Bookings
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-3"
-              onClick={handleMenuItemClick}
-            >
-              FAQs
-            </a>
-          </div>
-          <div className="py-1" role="none">
-            <a
-              href="#"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-4"
-              onClick={handleMenuItemClick}
-            >
-              Exhibit
-            </a>
-          </div>
+          <MenuItem name='Home' path='/' />
+          <MenuItem name='About' path='/about' />
+          <MenuItem name='Showcase' path='/showcase' />
+          <MenuItem name='Packages' path='/packages' />
+          <MenuItem name='Bookings' path='/bookings' />
+          <MenuItem name='FAQs' path='/faqs' />
+          <MenuItem name='Contact' path='/contact' />
+
+
         </div>
-      )}
+      }
     </div>
   );
 };
