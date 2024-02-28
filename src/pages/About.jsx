@@ -6,8 +6,9 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className='flex flex-col pt-28 pr-24 pl-24 text-white gap-10'>
-        <p>
+      
+      <div className='flex flex-col pt-28 pr-24 pl-24 text-white gap-10' style={{ scrollSnapType: "y mandatory" }}>
+        <p style={{ scrollSnapAlign: "start" }}>
           Welcome to Dreamliners, where we specialize in giving your vehicle the star treatment with our custom starlight headliners, reminiscent of the luxurious Rolls Royce style. Our mission is to transform your daily drives into extraordinary experiences.
         </p><p>
           At Dreamliners, we take pride in our craftsmanship and attention to detail. Our team of dedicated artisans is passionate about creating unique starlight headliners that reflect your individual style. We understand that your vehicle is more than just transportation; it's an expression of your personality, and we're here to make it shine.
