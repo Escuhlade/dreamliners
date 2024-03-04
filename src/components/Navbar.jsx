@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="">
             <DropMenu />
           </div>
-          {/* Centered Dreamliner Logo */}
+          {/* Centered Dreamliner Logo*/}
           <div className="flex items-center justify-center">
             <a href="/">
               <img
