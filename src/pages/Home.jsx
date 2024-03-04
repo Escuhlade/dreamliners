@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import FooterComp from "../components/FooterComp";
+import { MdArrowDropDown } from "react-icons/md";
 
 import herovideo from '../videos/compressed/HeroVideo-trimmed.mp4'
 import dualcolor from '../videos/compressed/DualColor-trimmed.mp4'
@@ -29,6 +30,7 @@ const Home = () => {
             <source src={herovideo} />
             Your browser does not support the video tag.
           </video>
+
         </div>
 
         {/* Second video div */}

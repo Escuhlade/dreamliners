@@ -18,7 +18,7 @@ const DropMenu = () => {
       {!isOpen && (
         <div
           onClick={openMenu}
-          className="flex flex-row items-center justify-center p-3 text-white bg-white bg-opacity-0 transition-all hover:bg-opacity-25  gap-2 rounded-xl cursor-pointer select-none"
+          className="flex cursor-pointer select-none flex-row items-center justify-center gap-2 rounded-xl bg-white bg-opacity-0  p-3 text-white transition-all hover:bg-opacity-25"
         >
           <MdMenu className="h-8 w-8 " />
           <p type="button" className="" id="menu-button">
@@ -29,26 +29,29 @@ const DropMenu = () => {
 
       {isOpen && (
         <div
-          className="absolute left-0 top-0 w-[20%] h-screen bg-black bg-opacity-60 text-white transform translate-x-0 duration-500 ease-out"
+          className="absolute left-0 top-0 h-screen w-[20%] translate-x-0 transform bg-black bg-opacity-60 text-white duration-500 ease-out"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
           tabIndex="-1"
         >
-          <div className='flex flex-row justify-between items-center pr-5 pt-4 pb-4'>
+          <div className="flex flex-row items-center justify-between pb-4 pr-5 pt-4">
             <div></div>
             <div> </div>
-            <div onClick={closeMenu} className='p-4 rounded-xl text-white transition-all bg-white bg-opacity-0 hover:bg-opacity-25 cursor-pointer select-none'>
+            <div
+              onClick={closeMenu}
+              className="cursor-pointer select-none rounded-xl bg-white bg-opacity-0 p-4 text-white transition-all hover:bg-opacity-25"
+            >
               <MdClose className="h-8 w-8" />
             </div>
           </div>
-          <MenuItem name='Home' path='/' />
-          <MenuItem name='About' path='/about' />
-          <MenuItem name='Showcase' path='/showcase' />
-          <MenuItem name='Packages' path='/packages' />
-          <MenuItem name='Bookings' path='/bookings' />
-          <MenuItem name='FAQs' path='/faqs' />
-          <MenuItem name='Contact' path='/contact' />
+          <MenuItem name="Home" path="/" />
+          <MenuItem name="About Us" path="/about" />
+          <MenuItem name="Showcase" path="/showcase" />
+          <MenuItem name="Packages" path="/packages" />
+          <MenuItem name="Bookings" path="/bookings" />
+          <MenuItem name="FAQs" path="/faqs" />
+          <MenuItem name="Contact" path="/contact" />
         </div>
       )}
     </div>

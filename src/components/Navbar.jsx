@@ -15,8 +15,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-transparent fixed w-full z-10">
-        <div className="w-screen flex items-center p-4 justify-between">
+      <nav className="fixed z-10 w-full bg-transparent">
+        <div className="flex w-screen items-center justify-between p-4">
           <div className="">
             <DropMenu />
           </div>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href="/">
               <img
                 src="https://i.gyazo.com/8727f9cdf2e8b2ad922a4738cf995a0f.png"
-                className="h-16 cursor-pointer transform transition-transform duration-100 hover:scale-110"
+                className="h-16 transform cursor-pointer transition-transform duration-100 hover:scale-110"
                 alt="DL Logo"
               />
             </a>
@@ -33,8 +33,11 @@ const Navbar = () => {
 
           {/* Horizontal Dropdown Menu */}
           {isDropdownOpen && (
-            <div className="absolute left-0 top-0 mt-2 space-x-4 origin-top-left bg-white border border-gray-200 rounded-md shadow-lg w-48 z-10">
-              <a href="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+            <div className="absolute left-0 top-0 z-10 mt-2 w-48 origin-top-left space-x-4 rounded-md border border-gray-200 bg-white shadow-lg">
+              <a
+                href="/"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
                 Menu Item 1
               </a>
               <a
@@ -56,14 +59,14 @@ const Navbar = () => {
             <div className="flex md:order-2 md:ml-auto">
               <button
                 type="button"
-                className="text-white transform transition-transform duration-100 hover:scale-105 font-medium text-sm px-4"
+                className="transform px-4 text-sm font-medium text-white transition-transform duration-100 hover:scale-105"
               >
                 Get Started
               </button>
             </div>
 
             <div
-              className="flex items-center justify-between h-12 w-12"
+              className="flex h-12 w-12 items-center justify-between"
               id="navbar-sticky"
             >
               <img
@@ -74,7 +77,6 @@ const Navbar = () => {
               />
             </div>
           </div>
-
         </div>
       </nav>
     </>
