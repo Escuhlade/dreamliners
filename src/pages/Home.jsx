@@ -7,6 +7,7 @@ import herovideo from '../videos/compressed/HeroVideo-trimmed.mp4'
 import dualcolor from '../videos/compressed/DualColor-trimmed.mp4'
 import leftside from '../videos/compressed/LeftSide-trimmed.mp4'
 import homepage3 from '../videos/compressed/HomePage3-Trimmed.mov'
+import { none } from "@cloudinary/url-gen/qualifiers/fontHinting";
 
 const Home = () => {
 
@@ -49,7 +50,7 @@ const Home = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="">
+            <div className="flex z-0">
               <video
                 className="h-screen w-auto"
                 controls={false}
@@ -61,6 +62,9 @@ const Home = () => {
                 <source src={dualcolor} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+              {/* button for contact now on dual color video */}
+              <button className = "bg-white relative self-center text-white z-auto" onClick={none}> Button </button>
+            
             </div>
           </div>
         </div>

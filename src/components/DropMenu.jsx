@@ -20,7 +20,7 @@ const DropMenu = () => {
           onClick={openMenu}
           className="flex cursor-pointer select-none flex-row items-center justify-center gap-2 rounded-xl bg-white bg-opacity-0  p-3 text-white transition-all hover:bg-opacity-25"
         >
-          <MdMenu className="h-8 w-8 " />
+          <MdMenu className="h-8 w-8" />
           <p type="button" className="" id="menu-button">
             Menu
           </p>
@@ -36,8 +36,6 @@ const DropMenu = () => {
           tabIndex="-1"
         >
           <div className="flex flex-row items-center justify-between pb-4 pr-5 pt-4">
-            <div></div>
-            <div> </div>
             <div
               onClick={closeMenu}
               className="cursor-pointer select-none rounded-xl bg-white bg-opacity-0 p-4 text-white transition-all hover:bg-opacity-25"
